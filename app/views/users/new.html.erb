@@ -1,0 +1,15 @@
+<form action="/users" method="post" accept-charset="utf-8">
+<div>
+  <label for="user_username">username</label>
+  <input type="text" name="user[username]" id="user_username" value="<%= @user.username %>">
+</div>
+<div>
+  <label for="user_email">email</label>
+  <input type="text" name="user[email]" id="user_email" value="<%= @user.email %>">
+</div><div>
+  <label for="user_password">password</label>
+  <input type="password" name="user[password]" id="user_password" value="<%= @user.password %>">
+</div>
+
+<button type="submit">Submit</button>
+</form>
