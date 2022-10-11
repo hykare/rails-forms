@@ -1,3 +1,9 @@
+<p>Edit user</p>
+
+<% @user.errors.each do |error| %>
+  <p><%= error.full_message %></p>
+<% end %>
+
 <%= form_with model: @user do |form| %>
   <div>
     <%= form.label :username, "Your username here:" %>
